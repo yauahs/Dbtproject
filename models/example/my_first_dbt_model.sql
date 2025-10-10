@@ -1,3 +1,4 @@
+{{ config(tags=['new']) }}
 
 /*
     Welcome to your first dbt model!
@@ -6,8 +7,6 @@
 
     Try changing "table" to "view" below
 */
-
-{{ config(materialized='table') }}
 
 with source_data as (
 
