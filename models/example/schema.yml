@@ -18,3 +18,21 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: newmodel
+    description: "A model filtering my_second_dbt_model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: all_models_combined
+    description: "A model combining all existing models in the project"
+    columns:
+      - name: origin_model
+        description: "The source model name"
+      - name: id
+        description: "The ID from the source model"
+
